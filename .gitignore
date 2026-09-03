@@ -1,0 +1,76 @@
+# config
+!docs/config/*.docx
+*.cfg
+*.env
+!*.env.example
+
+# Xcode user data
+*.xcuserdata/
+*.xcuserstate
+
+# Breakpoints
+*.xcbkptlist
+
+# temp
+*.jpeg
+*.docx
+~$*.docx
+*.pdf
+*.drawio.*
+*.bkp
+*.dtmp
+!*.drawio.svg
+**/.obsidian/
+**/docs/media/
+**/docs/*.source.*
+**/docs/*.converted.*
+
+# macOS
+*.DS_Store
+
+# VS Code
+.vscode/
+output/
+.output/
+
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Linker files
+*.ilk
+
+# Debugger Files
+*.pdb
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# debug information files
+*.dwo
