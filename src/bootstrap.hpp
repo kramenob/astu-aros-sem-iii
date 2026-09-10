@@ -13,6 +13,7 @@
 #pragma once
 
 /** Standard library headers */
+#include <cstdlib>
 #include <functional>
 #include <iostream>
 #include <limits>
@@ -24,6 +25,14 @@
 
 /** Using namespace std */
 using namespace std;
+
+/** Environment configuration */
+inline const char *author = getenv("author");
+inline const char *author_full = getenv("author_full");
+inline const char *group = getenv("group");
+inline const char *supervisor = getenv("supervisor");
+inline const char *year = getenv("year");
+inline const char *env_variant = getenv("variant");
 
 /** Utility headers */
 #include "utils/header.utils.hpp"

@@ -11,5 +11,6 @@
 #include "../bootstrap.hpp"
 
 // Declare labs
+namespace lw01 { void index(); }
 
 #endif

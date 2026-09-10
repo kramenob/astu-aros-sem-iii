@@ -3,8 +3,16 @@
 set -e
 
 PROJECT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
+ENV_FILE="$PROJECT_DIR/config/.env"
 BUILD_DIR="$PROJECT_DIR/.output"
 OUTPUT="$BUILD_DIR/main"
+
+# Load environment variables from config/.env.
+if [ -f "$ENV_FILE" ]; then
+    set -a
+    source "$ENV_FILE"
+    set +a
+fi
 
 mkdir -p "$BUILD_DIR"
 

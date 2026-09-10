@@ -17,16 +17,23 @@ int main()
 	 */
 	setlocale(LC_ALL, "");
 
+	/* Greetings */
+	message("main", "intro");
+
 	/**
 	 * Map of available works. Key is the work number, value is the handler function.
 	 * The handler function is a function that will be called when the work is selected.
 	 */
 
 	/* Laboratory works */
-	map<int, Handler> labs = {};
+	map<int, Handler> labs = {
+		{1, lw01::index}
+	};
 
 	/* Self works */
-	map<int, Handler> sels = {};
+	map<int, Handler> sels = {
+		{1, sw01::index}
+	};
 
 	cout << "Доступные виды работ:" << endl
 		 << " 1. Лабораторная (" << labs.size() << ");" << endl
