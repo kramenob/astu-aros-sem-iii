@@ -7,7 +7,6 @@ project(AstuArosSemIII
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(CMAKE_OSX_ARCHITECTURES x86_64)
 
 # Build the application for Intel x86_64.
 set(CMAKE_OSX_ARCHITECTURES x86_64)
@@ -27,7 +26,10 @@ add_executable(AstuArosSemIII
     ${SOURCES}
 )
 
+# Enable Microsoft-style assembly blocks for x86.
+target_compile_options(AstuArosSemIII PRIVATE -fasm-blocks)
+
 target_include_directories(AstuArosSemIII
     PRIVATE
-        ${CMAKE_CURRENT_SOURCE_DIR}
+    ${CMAKE_CURRENT_SOURCE_DIR}
 )

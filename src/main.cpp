@@ -18,7 +18,7 @@ int main()
 	setlocale(LC_ALL, "");
 
 	/* Greetings */
-	message("main", "intro");
+	message("main", "main", "intro");
 
 	/**
 	 * Map of available works. Key is the work number, value is the handler function.
@@ -26,13 +26,27 @@ int main()
 	 */
 
 	/* Laboratory works */
-	map<int, Handler> labs = {
-		{1, lw01::index}
+	map<int, Handler> labs = {{1, lw01::index},
+		{2, lw02::index},
+		{3, lw03::index},
+		{4, lw04::index},
+		{5, lw05::index},
+		{6, lw06::index},
+		{7, lw07::index},
+		{8, lw08::index},
+		{9, lw09::index}
 	};
 
 	/* Self works */
-	map<int, Handler> sels = {
-		{1, sw01::index}
+	map<int, Handler> sels = {{1, sw01::index},
+		{2, sw02::index},
+		{3, sw03::index},
+		{4, sw04::index},
+		{5, sw05::index},
+		{6, sw06::index},
+		{7, sw07::index},
+		{8, sw08::index},
+		{9, sw09::index}
 	};
 
 	cout << "Доступные виды работ:" << endl

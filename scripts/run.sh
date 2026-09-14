@@ -5,7 +5,7 @@ set -e
 PROJECT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 ENV_FILE="$PROJECT_DIR/config/.env"
 BUILD_DIR="$PROJECT_DIR/.output"
-OUTPUT="$BUILD_DIR/main"
+OUTPUT="$BUILD_DIR/AstuArosSemIII"
 
 # Load environment variables from config/.env.
 if [ -f "$ENV_FILE" ]; then
@@ -14,34 +14,10 @@ if [ -f "$ENV_FILE" ]; then
     set +a
 fi
 
-mkdir -p "$BUILD_DIR"
-
-# Find all C++ source files in the project.
-SOURCES=()
-
-while IFS= read -r -d '' FILE; do
-    SOURCES+=("$FILE")
-done < <(
-    find "$PROJECT_DIR" \
-        -type f \
-        -name '*.cpp' \
-        ! -path "$BUILD_DIR/*" \
-        ! -path "$PROJECT_DIR/src/labs/template/*" \
-        ! -path "$PROJECT_DIR/src/sels/template/*" \
-        -print0
-)
-
 echo "Building..."
+"$PROJECT_DIR/scripts/build.sh"
 
-c++ \
-    -std=c++17 \
-    -Wall \
-    -Wextra \
-    -I"$PROJECT_DIR/src" \
-    -I"$PROJECT_DIR/docs/labs" \
-    "${SOURCES[@]}" \
-    -o "$OUTPUT"
-
+echo
 echo "Running..."
 echo
 

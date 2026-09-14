@@ -12,6 +12,7 @@
 
 namespace lw01
 {
+	constexpr const char *CURRENT_WORK_TYPE = "lab";
 	constexpr const char *CURRENT_NUMBER = "01";
 
 	void index();

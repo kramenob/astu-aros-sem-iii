@@ -14,7 +14,7 @@ namespace sw01
 	{
 
 		// print message introduction in program
-		message(CURRENT_NUMBER, "intro");
+		message(CURRENT_WORK_TYPE, CURRENT_NUMBER, "intro");
 
 		int a = 1; // define a
 		int b = 2; // define b
@@ -23,15 +23,15 @@ namespace sw01
 		int Y;	   // define Y
 
 		// Variant 14: Y=d+a-b+c
-		__asm__ volatile(
-			"add %w[Y], %w[d], %w[a]\n"
-			"sub %w[Y], %w[Y], %w[b]\n"
-			"add %w[Y], %w[Y], %w[c]"
-			: [Y] "=r"(Y)
-			: [d] "r"(d),
-			  [a] "r"(a),
-			  [b] "r"(b),
-			  [c] "r"(c));
+		__asm // assembly insertion
+		{
+			// eax - x86 32-bit register
+			mov eax, d; // load d into eax
+			add eax, a; // eax = d + a
+			sub eax, b; // eax = d + a - b
+			add eax, c; // eax = d + a - b + c
+			mov Y, eax; // store the result in Y
+		}
 
 		// print results
 		printf("\nРезультат вычисления на Assembly:\nd + a - b + c = %x + %x - %x + %x = %x\n", d, a, b, c, Y);

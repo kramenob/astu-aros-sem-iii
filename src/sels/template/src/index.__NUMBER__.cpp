@@ -11,7 +11,7 @@ namespace sw__NUMBER__
 	{
 
 		// print message introduction in program
-		message(CURRENT_NUMBER, "intro");
+		message(CURRENT_WORK_TYPE, CURRENT_NUMBER, "intro");
 
 		// finish
 		return;

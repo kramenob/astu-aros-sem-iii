@@ -15,12 +15,17 @@ string readMessage(const string &path)
 	return buffer.str();
 }
 
-void message(const string &labNumber, const string &key)
+void message(
+	const string &workType,
+	const string &number,
+	const string &key)
 {
 	const string path =
-		(labNumber == "main")
+		(number == "main")
 			? "src/docs/messages.main.md"
-			: "src/labs/" + labNumber + "/docs/messages." + labNumber + ".md";
+			: (workType == "sel"
+				   ? "src/sels/" + number + "/docs/messages." + number + ".md"
+				   : "src/labs/" + number + "/docs/messages." + number + ".md");
 
 	ifstream file(path);
 
