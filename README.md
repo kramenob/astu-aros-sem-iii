@@ -10,10 +10,42 @@ Source code and docs.
 
 ## Progress
 
-- [ ] Labs
-  - [ ]
 - [ ] Selfs
-  - [ ] - [ ] diagram(-s)
+  - [ ] 01
+	- [X] passed
+  	- [ ] diagram(-s)
+    - [ ] report
+  - [ ] 02
+	- [X] passed
+  	- [ ] diagram(-s)
+    - [ ] report
+  - [ ] 03
+	- [X] passed
+  	- [ ] diagram(-s)
+    - [ ] report
+  - [ ] 04
+	- [ ] passed
+  	- [ ] diagram(-s)
+    - [ ] report
+  - [ ] 05
+	- [ ] passed
+  	- [ ] diagram(-s)
+    - [ ] report
+  - [ ] 06
+	- [ ] passed
+  	- [ ] diagram(-s)
+    - [ ] report
+  - [ ] 07
+	- [ ] passed
+  	- [ ] diagram(-s)
+    - [ ] report
+  - [ ] 08
+	- [ ] passed
+  	- [ ] diagram(-s)
+    - [ ] report
+  - [ ] 09
+	- [ ] passed
+  	- [ ] diagram(-s)
     - [ ] report
 - [ ] converting to .docx with formatting script
 
