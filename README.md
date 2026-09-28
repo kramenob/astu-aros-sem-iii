@@ -47,13 +47,12 @@ Source code and docs.
 	- [ ] passed
   	- [ ] diagram(-s)
     - [ ] report
-- [ ] converting to .docx with formatting script
 
 ---
 
 ## Docs
 
-Can be explore by .md + .drawio (for normal people) or converted to .docx for dinosaurs (with normal people support).
+Can be explore by .md + .mmd (for normal people) or converted to .docx for the dinosaurs.
 
 ### TOC
 

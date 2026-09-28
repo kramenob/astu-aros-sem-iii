@@ -20,6 +20,7 @@ file(GLOB_RECURSE SOURCES CONFIGURE_DEPENDS
 # Exclude templates.
 list(FILTER SOURCES EXCLUDE REGEX "/labs/template/")
 list(FILTER SOURCES EXCLUDE REGEX "/sels/template/")
+list(FILTER SOURCES EXCLUDE REGEX "/knowledge/")
 list(FILTER SOURCES EXCLUDE REGEX "/\\.output/")
 
 add_executable(AstuArosSemIII
