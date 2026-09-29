@@ -11,42 +11,15 @@ Source code and docs.
 ## Progress
 
 - [ ] Selfs
-  - [ ] 01
-	- [X] passed
-  	- [ ] diagram(-s)
-    - [ ] report
-  - [ ] 02
-	- [X] passed
-  	- [ ] diagram(-s)
-    - [ ] report
-  - [ ] 03
-	- [X] passed
-  	- [ ] diagram(-s)
-    - [ ] report
-  - [ ] 04
-	- [ ] passed
-  	- [ ] diagram(-s)
-    - [ ] report
+  - [X] 01
+  - [X] 02
+  - [X] 03
+  - [X] 04
   - [ ] 05
-	- [ ] passed
-  	- [ ] diagram(-s)
-    - [ ] report
   - [ ] 06
-	- [ ] passed
-  	- [ ] diagram(-s)
-    - [ ] report
   - [ ] 07
-	- [ ] passed
-  	- [ ] diagram(-s)
-    - [ ] report
   - [ ] 08
-	- [ ] passed
-  	- [ ] diagram(-s)
-    - [ ] report
   - [ ] 09
-	- [ ] passed
-  	- [ ] diagram(-s)
-    - [ ] report
 
 ---
 
