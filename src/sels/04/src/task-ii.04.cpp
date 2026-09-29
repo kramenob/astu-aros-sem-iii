@@ -50,7 +50,7 @@ namespace sw04
 			 * Store the Assembly result in rAsm.
 			 */
 			mov    rAsm, eax
-			jmp    task_ii_done
+			jmp    result
 
 		not_positive:
 			/**
@@ -58,7 +58,7 @@ namespace sw04
 			 */
 			mov    rAsm, eax
 
-		task_ii_done:
+		result:
 		}
 
 		/**

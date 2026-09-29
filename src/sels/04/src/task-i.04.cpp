@@ -47,7 +47,7 @@ namespace sw04
 			 */
 			mov    eax, 1
 			mov    yAsm, eax
-			jmp    task_i_done
+			jmp    result
 
 		x_positive:
 			/**
@@ -62,7 +62,7 @@ namespace sw04
 			 */
 			add    eax, a
 			mov    yAsm, eax
-			jmp    task_i_done
+			jmp    result
 
 		x_negative:
 			/**
@@ -72,7 +72,7 @@ namespace sw04
 			imul   eax, x
 			mov    yAsm, eax
 
-		task_i_done:
+		result:
 		}
 
 		/**

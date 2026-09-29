@@ -118,7 +118,7 @@ namespace sw04
 			 * B is closer to A.
 			 */
 			mov    pointAsm, 'B'
-			jmp    point_asm_ready
+			jmp    result
 
 		point_c_asm:
 
@@ -127,7 +127,7 @@ namespace sw04
 			 */
 			mov    pointAsm, 'C'
 
-		point_asm_ready:
+		result:
 		}
 
 		/**
